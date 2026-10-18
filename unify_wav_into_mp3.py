@@ -12,7 +12,8 @@ DEFAULT_OUTPUT = "audiobook.mp3"
 
 def find_wav_files(input_dir: Path) -> list[Path]:
     # Zero-padded names (chunk_0000.wav) make lexical order the correct order.
-    return sorted(input_dir.glob("*.wav"), key=lambda p: p.name.lower())
+    return sorted((p for p in input_dir.glob("*.wav") if not p.name.endswith(".part.wav")),
+                  key=lambda p: p.name.lower())
 
 
 def write_concat_list(files: list[Path], list_path: Path) -> None:
