@@ -3,6 +3,8 @@
 # 🎧 PDF → Audiobook → Captioned Video
 
 **Turn any PDF into a narrated audiobook (MP3) and a captioned video (MP4) — 100% local, free, no API keys.**
+![](https://komarev.com/ghpvc/?username=pdf-to-audiobook&color=lightgrey&style=for-the-badge) 
+
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)
 ![TTS](https://img.shields.io/badge/TTS-Coqui%20VITS-orange)
