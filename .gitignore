@@ -1,0 +1,6 @@
+venv/
+piper_env/
+__pycache__/
+*.pyc
+audiobook_chunks/
+concat_*.txt
